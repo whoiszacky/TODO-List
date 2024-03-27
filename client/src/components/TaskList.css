@@ -1,0 +1,180 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+.container {
+    background-color: #22303d;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content {
+    background-color: #22303d;
+    width: 90%;
+    max-width: 1440px;
+    padding: 20px;
+    width: 700px;
+     
+  }
+  
+  .task-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+  }
+  
+  .add-task {
+    margin-top: 20px;
+    display: inline-flex;
+    
+    
+    
+  }
+  /* the fucking input */
+  .addtask{
+    width: 600px;
+    margin-left: 10px;
+    padding-left: 14px;
+    background-color: #f2f1f196;
+    height: 43px;
+    border: none;
+    border-radius: 20px;
+  }
+  /* addbtn */
+  .addbtn{
+    border-radius: 50%;
+    background-color: #E05C3F;
+    border: none;
+    margin-left: 5px;
+  }
+  /* bullshit */
+  .tracker-text{
+    border: 4px solid;
+    border-color: #e8e4e4;
+    border-radius: 30px;
+    height: 200px; 
+    /* left: 361px; */
+    /* top: 142px; */
+    /* width: 728px; */
+    position: relative;
+  }
+  .circle {
+    background-color: #e05b3e;
+    border-radius: 91.01px/91px;
+    height: 182px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    transform: rotate(3.82deg);
+    width: 182px;
+    float: right;
+  }
+  .completedTasks{
+    color: #22303d;
+    font-family: "Jomhuria", Helvetica;
+    font-size: 128px;
+    font-weight: 400;
+    left: 60px;
+    letter-spacing: -8.96px;
+    line-height: normal;
+    position: absolute;
+    top: 1px;
+    
+    white-space: nowrap;
+  }
+  /* the divider line */
+  .line{
+    width: 80px;
+    height: 0px;
+    margin-top: 2.8rem;
+    transform: rotate(336deg);
+    transform-origin: 0px 0px;
+    border: 9px solid rgb(35, 49, 62);
+    border-radius: 10px;
+  }
+  .existingTasks{
+    color: #22303d;
+    font-family: "Jomhuria", Helvetica;
+    font-size: 128px;
+    font-weight: 400;
+    left: 95px;
+    letter-spacing: -8.96px;
+    line-height: normal;
+    position: absolute;
+    top: 75px;
+    transform: rotate(2.06deg);
+    white-space: nowrap;
+    width: 37px;
+    
+  }
+  /* TaskCard.css */
+  .task-card {
+    background-color: #23313e;
+    border: 2px solid #e8e4e4;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(100% - 20px); /* Adjust as needed */
+  }
+  
+  .task-time {
+    color: #ffb5a5;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .task-location {
+    color: #ffb5a5;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+
+  
+
+  
+  .task-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to start */
+    justify-content: space-between;
+    background-color: #f2f1f18a; 
+    padding: 10px;
+    width: 50rem;
+    margin-bottom: 10px;
+    position: relative; /* Position relative for absolute positioning of edit button */
+    WORD-BREAK: break-all;
+
+  }
+  
+  .task-card.completed {
+    background-color: #FFB6A6; /* Change to green */
+  }
+  
+  .actions {
+    display: flex;
+    position: absolute;
+    margin-right: 1rem;
+    right: 0; /* Align buttons to the top right corner */
+  }
+  
+  .actions button {
+    margin-left: 5px;
+  }
+  
+  .task-card input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  .task-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-all; /* Break long words to new line */
+     /*width: 200px; Set a fixed width for the task title container */
+    overflow-wrap: break-word;
+    white-space: pre-line;
+  }
