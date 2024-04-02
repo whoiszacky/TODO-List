@@ -25,7 +25,8 @@
   
   .add-task {
     margin-top: 20px;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: nowrap;
     
     
     
@@ -72,6 +73,7 @@
     transform: rotate(3.82deg);
     width: 182px;
     float: right;
+    margin: 10px;
   }
   .completedTasks{
     color: #22303d;
@@ -177,4 +179,13 @@
      /*width: 200px; Set a fixed width for the task title container */
     overflow-wrap: break-word;
     white-space: pre-line;
+  }
+  @media only screen and (max-width: 768px) {
+    .task-card {
+      width: 100%; /*  */
+    }
+  
+    .addtask {
+      width: 100%; /*  */
+    }
   }

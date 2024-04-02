@@ -8,6 +8,8 @@ import { FiSave } from "react-icons/fi";
 
 import axios from "axios";
 
+
+
 const TaskList = () => {
     const [tasks, setTasks] = useState([]);
     const [newTask, setNewTask] = useState("");
@@ -89,6 +91,9 @@ const TaskList = () => {
       <div className="content">
         <div className="task-tracker">
           <div className="tracker-text">
+            <div className="qouteoftheday"  style={{display: 'inline-flex'}}>
+              
+            </div>
             <div className="circle">
               <div className="completedTasks">{completedTasks}</div>
               <span className="line"></span>
