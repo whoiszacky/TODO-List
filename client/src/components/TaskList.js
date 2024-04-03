@@ -8,6 +8,7 @@ import { FiSave } from "react-icons/fi";
 
 import axios from "axios";
 
+import QuoteOfTheDay from "./quoteOfTheDay";
 
 
 const TaskList = () => {
@@ -91,8 +92,8 @@ const TaskList = () => {
       <div className="content">
         <div className="task-tracker">
           <div className="tracker-text">
-            <div className="qouteoftheday"  style={{display: 'inline-flex'}}>
-              
+            <div className="qouteoftheday"  style={{display: 'flex', position: "absolute", width: "45%", padding: "25px", color: "white"}}>
+              <QuoteOfTheDay/>
             </div>
             <div className="circle">
               <div className="completedTasks">{completedTasks}</div>
